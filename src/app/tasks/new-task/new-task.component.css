@@ -1,0 +1,113 @@
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px); /* Safari support */
+}
+
+dialog {
+  width: 90%;
+  max-width: 30rem;
+  background: linear-gradient(to bottom, #1e293b, #0f172a);
+  border-radius: 8px;
+  border: 1px solid #0166B1;
+  box-shadow: 0 2px 12px rgba(1, 102, 177, 0.3);
+  overflow: hidden;
+  padding: 1.5rem;
+  top: 5rem;
+  color: #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+dialog:hover {
+  box-shadow: 0 4px 16px rgba(1, 102, 177, 0.5);
+}
+
+h2 {
+  margin: 0 0 1rem 0;
+  color: #ffffff;
+  text-shadow: 0 0 2px #0166B1;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 0.25rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #334155;
+  background-color: #1f2937;
+  color: #f8fafc;
+  margin-bottom: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0166B1;
+  box-shadow: 0 0 0 2px rgba(1, 102, 177, 0.3);
+}
+
+.actions {
+  margin: 1.5rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+button[type="button"] {
+  background-color: transparent;
+  color: #94a3b8;
+  border: 1px solid #334155;
+}
+
+button[type="button"]:hover,
+button[type="button"]:active {
+  color: #ffffff;
+  border-color: #64748b;
+}
+
+button[type="submit"] {
+  background-color: #0166B1;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(1, 102, 177, 0.3);
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:active {
+  background-color: #1293e0;
+  box-shadow: 0 0 0 2px #0166B1 inset, 0 2px 8px rgba(1, 102, 177, 0.4);
+}
+
+@media (min-width: 768px) {
+  dialog {
+    padding: 2rem;
+    top: 10vh;
+  }
+  
+  button {
+    padding: 0.5rem 1.75rem;
+  }
+}

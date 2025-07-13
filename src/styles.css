@@ -1,0 +1,84 @@
+/* Global box model setup */
+* {
+  box-sizing: border-box;
+}
+
+/* Base HTML styles */
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top left, #0b0519, #050311);
+  color: #d1d5db; /* Light gray for general text */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* Links */
+a {
+  color: #0166B1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #39a2e0;
+  text-decoration: underline;
+}
+
+
+button {
+  background-color: #0166B1;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0281d0;
+}
+
+/* Form inputs */
+input, textarea, select {
+  background-color: #1e1b2f;
+  color: #e5e7eb;
+  border: 1px solid #2c2a3f;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #0166B1;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(1, 102, 177, 0.4);
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0519;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0166B1;
+  border-radius: 4px;
+}
